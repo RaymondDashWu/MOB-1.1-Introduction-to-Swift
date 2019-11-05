@@ -22,6 +22,7 @@
 		CDD48D0F236EDF9D00046EAD /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD48D0E236EDF9D00046EAD /* MSButtonNode.swift */; };
 		CDD48D11236F8B7900046EAD /* SushiPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD48D10236F8B7900046EAD /* SushiPiece.swift */; };
 		CDD48D13236FF30200046EAD /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD48D12236FF30200046EAD /* Character.swift */; };
+		CDD48D572371589400046EAD /* AnimationActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CDD48D562371589400046EAD /* AnimationActions.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		CDD48D0E236EDF9D00046EAD /* MSButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
 		CDD48D10236F8B7900046EAD /* SushiPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiPiece.swift; sourceTree = "<group>"; };
 		CDD48D12236FF30200046EAD /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		CDD48D562371589400046EAD /* AnimationActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = AnimationActions.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		CDD48CC9236ECEA500046EAD = {
 			isa = PBXGroup;
 			children = (
+				CDD48D562371589400046EAD /* AnimationActions.sks */,
 				CDD48D0B236EDF6100046EAD /* SFX */,
 				CDD48D09236EDF3E00046EAD /* assets.atlas */,
 				CDD48CD4236ECEA500046EAD /* SushiNeko */,
@@ -265,6 +268,7 @@
 				CDD48CD8236ECEA500046EAD /* GameScene.sks in Resources */,
 				CDD48D0A236EDF3E00046EAD /* assets.atlas in Resources */,
 				CDD48CE3236ECEA600046EAD /* Assets.xcassets in Resources */,
+				CDD48D572371589400046EAD /* AnimationActions.sks in Resources */,
 				CDD48CE6236ECEA600046EAD /* LaunchScreen.storyboard in Resources */,
 				CDD48D0D236EDF6100046EAD /* sfx_swipe.caf in Resources */,
 				CDD48CDA236ECEA500046EAD /* Actions.sks in Resources */,
