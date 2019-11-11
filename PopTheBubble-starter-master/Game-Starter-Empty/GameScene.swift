@@ -26,7 +26,7 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         //Called when the scene has been displayed
         
-        //TODO: Create three squares with the names one,two,three
+        //Create three squares with the names one,two,three
         createSquares(name: "one")
         createSquares(name: "two")
         createSquares(name: "three")
@@ -56,7 +56,7 @@ class GameScene: SKScene {
     }
     
     func createSquares(name: String) {
-        //TODO: Set up square properties
+        //Set up square properties
         //1. Create a CGSize for the square with (width: 80, height: 80)
         var squareDimensions = CGSize(width: 80, height: 80)
         //2. Create a Square node with a texture of nil. a color of .green and the size we created above
@@ -64,7 +64,7 @@ class GameScene: SKScene {
         //3. Set the squares name to the name we pass into this function
         squareNode.name = name
         
-        //TODO: Set up the Squares x and y positions
+        //Set up the Squares x and y positions
         //1. Squares y positions shoud start at 40
         squareNode.position.y = 40
         //2. Squares x positon should use the randomNumber generator provided above
@@ -72,14 +72,21 @@ class GameScene: SKScene {
 
         //Create an action to move the square up the screen
         let action = SKAction.customAction(withDuration: 2.0, actionBlock: { (square, _) in
-            //TODO: Set up the squares animation
+            //Set up the squares animation
             //1. The squares y position should increase by 10
             squareNode.position.y += 10
             //2. Create an if statement that checks if the squares y position is >= to the screens height
-            //If it is remove the square and create a new square with the same name
+            if squareNode.position.y >= self.view!.frame.height {
+                //If it is remove the square and create a new square with the same name
+                squareNode.removeFromParent()
+                self.createSquares(name: squareNode.name!)
+            }
         })
         
-        //TODO: Have the square run the above animation forever and add the square to the SKScene!
+        //Have the square run the above animation forever and add the square to the SKScene!
+        addChild(squareNode)
+        squareNode.run(SKAction.repeatForever(action))
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -90,14 +97,19 @@ class GameScene: SKScene {
             let positionInScene = touch.location(in: self)
             
             //Find the name for the node in that location
-            let name = self.atPoint(positionInScene).name
+            //Note: Changed from name to node. This var used to have .name at the end
+            let node = self.atPoint(positionInScene)
             
             //Check if there is an node there.
-            if name != nil {
-                //TODO: Remove the square
+            if node.name != nil {
+                //Remove the square
                 //Remove node from parent view
+                node.removeFromParent()
                 //Increase the score by one
+                score += 1
+                scoreLabel.text = ("\(score)")
                 //Create the square again with the same name
+                createSquares(name: node.name!)
             }
         }
     }
