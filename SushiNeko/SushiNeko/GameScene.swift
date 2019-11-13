@@ -17,6 +17,7 @@ class GameScene: SKScene {
     var character: Character!
     /* Sushi tower array */
     var sushiTower: [SushiPiece] = []
+<<<<<<< HEAD
     /* Game management */
     var state: GameState = .title
     
@@ -40,6 +41,8 @@ class GameScene: SKScene {
       }
     }
 
+=======
+>>>>>>> 6d642ae8ea6cc1999bde565e221ba8064b98c859
     
     func addRandomPieces(total: Int) {
       /* Add random sushi pieces to the sushi tower */
@@ -106,12 +109,18 @@ class GameScene: SKScene {
         /* Connect game objects */
         sushiBasePiece = childNode(withName: "sushiBasePiece") as! SushiPiece
         character = childNode(withName: "character") as! Character
+<<<<<<< HEAD
         /* UI game objects */
         playButton = childNode(withName: "playButton") as! MSButtonNode
         healthBar = childNode(withName: "healthBar") as! SKSpriteNode
         scoreLabel = childNode(withName: "scoreLabel") as! SKLabelNode
 
+=======
+>>>>>>> 6d642ae8ea6cc1999bde565e221ba8064b98c859
         
+        /* Manually stack the start of the tower */
+        addTowerPiece(side: .none)
+        addTowerPiece(side: .right)
         
         /* Manually stack the start of the tower */
         addTowerPiece(side: .none)
