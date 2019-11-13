@@ -18,6 +18,7 @@ class GameScene: SKScene {
     /* Sushi tower array */
     var sushiTower: [SushiPiece] = []
 <<<<<<< HEAD
+<<<<<<< HEAD
     /* Game management */
     var state: GameState = .title
     
@@ -41,6 +42,8 @@ class GameScene: SKScene {
       }
     }
 
+=======
+>>>>>>> 6d642ae8ea6cc1999bde565e221ba8064b98c859
 =======
 >>>>>>> 6d642ae8ea6cc1999bde565e221ba8064b98c859
     
@@ -110,6 +113,7 @@ class GameScene: SKScene {
         sushiBasePiece = childNode(withName: "sushiBasePiece") as! SushiPiece
         character = childNode(withName: "character") as! Character
 <<<<<<< HEAD
+<<<<<<< HEAD
         /* UI game objects */
         playButton = childNode(withName: "playButton") as! MSButtonNode
         healthBar = childNode(withName: "healthBar") as! SKSpriteNode
@@ -117,14 +121,19 @@ class GameScene: SKScene {
 
 =======
 >>>>>>> 6d642ae8ea6cc1999bde565e221ba8064b98c859
+=======
+>>>>>>> 6d642ae8ea6cc1999bde565e221ba8064b98c859
         
         /* Manually stack the start of the tower */
         addTowerPiece(side: .none)
         addTowerPiece(side: .right)
+<<<<<<< HEAD
         
         /* Manually stack the start of the tower */
         addTowerPiece(side: .none)
         addTowerPiece(side: .right)
+=======
+>>>>>>> 6d642ae8ea6cc1999bde565e221ba8064b98c859
         
         sushiBasePiece.connectChopsticks()
         
