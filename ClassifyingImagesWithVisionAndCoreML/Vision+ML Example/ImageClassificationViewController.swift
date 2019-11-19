@@ -10,6 +10,7 @@ import CoreML
 import Vision
 import ImageIO
 
+@available(iOS 13.0, *)
 class ImageClassificationViewController: UIViewController {
     // MARK: - IBOutlets
     
@@ -27,7 +28,7 @@ class ImageClassificationViewController: UIViewController {
              To use a different Core ML classifier model, add it to the project
              and replace `MobileNet` with that model's generated Swift class.
              */
-            let model = try VNCoreMLModel(for: MobileNet().model)
+            let model = try VNCoreMLModel(for: makeschool_dog_identifier().model)
             
             let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
                 self?.processClassifications(for: request, error: error)
@@ -81,8 +82,8 @@ class ImageClassificationViewController: UIViewController {
                     // Formats the classification for display; e.g. "(0.37) cliff, drop, drop-off".
                    return String(format: "  (%.2f) %@", classification.confidence, classification.identifier)
                 }
-                self.classificationLabel.text = "Classification:\n" + descriptions.joined(separator: "\n")
-            }
+                self.classificationLabel.text = "Hmm 🤔... I think this is: \n" + descriptions.joined(separator: "\n")
+            }	
         }
     }
     
@@ -118,6 +119,7 @@ class ImageClassificationViewController: UIViewController {
     }
 }
 
+@available(iOS 13.0, *)
 extension ImageClassificationViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     // MARK: - Handling Image Picker Selection
 
