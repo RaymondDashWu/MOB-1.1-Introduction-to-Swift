@@ -6,6 +6,7 @@ Sugar_full_size/
 Tahoe_full_size/
 Archive.zip
 .DS_Store
+*.mlmodel
 
 ### Swift ###
 # Xcode
