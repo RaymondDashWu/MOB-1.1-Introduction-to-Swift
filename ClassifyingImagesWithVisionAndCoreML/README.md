@@ -1,3 +1,19 @@
+# A simple classifier to determine the difference between two dogs at Make School: Sugar & Tahoe. Modified from Apple's Core ML example.
+
+## Tahoe
+<img src="https://i.imgur.com/e97j9ws.jpg" width=300>
+
+## Sugar
+<img src="https://i.imgur.com/xGhkEU3.jpg" width=300>
+
+<img src="https://i.imgur.com/qqpciSq.png" width=300>
+
+The code to train the model can be found here:
+https://github.com/RaymondDashWu/MOB-1.1-Introduction-to-Swift/blob/master/ClassifyingImagesWithVisionAndCoreML/MOB1.1%20-%20Sugar%20vs%20Tahoe%20Classifier.ipynb
+
+Original README below
+===============================================
+
 # Classifying Images with Vision and Core ML
 
 Preprocess photos using the Vision framework and classify them with a Core ML model.
