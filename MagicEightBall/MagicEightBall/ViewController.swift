@@ -27,13 +27,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func shakeButtonTapped(_ sender: Any) {
-        // 1
-        let maxIndex = UInt32(answers.count)
-        // 2
-        let randomIndex = Int(arc4random_uniform(maxIndex))
-        
-        // 3
-        answerLabel.text = answers[randomIndex]
+        print("Shake it like a polaroid picture!")
+
+//        // 1
+//        let maxIndex = UInt32(answers.count)
+//        // 2
+//        let randomIndex = Int(arc4random_uniform(maxIndex))
+//
+//        // 3
+//        answerLabel.text = answers[randomIndex]
     }
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {

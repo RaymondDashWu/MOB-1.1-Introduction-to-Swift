@@ -16,6 +16,7 @@
 		CD3922382389FF1A007D131E /* app_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3922362389FF1A007D131E /* app_icon@3x.png */; };
 		CD3922392389FF1A007D131E /* app_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3922372389FF1A007D131E /* app_icon@2x.png */; };
 		CD392249239342A4007D131E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD392248239342A4007D131E /* ViewController.swift */; };
+		CD39226B23934BA6007D131E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD39226A23934BA6007D131E /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CD3922362389FF1A007D131E /* app_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon@3x.png"; sourceTree = "<group>"; };
 		CD3922372389FF1A007D131E /* app_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon@2x.png"; sourceTree = "<group>"; };
 		CD392248239342A4007D131E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD39226A23934BA6007D131E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				CD392248239342A4007D131E /* ViewController.swift */,
 				CD3922272389FE04007D131E /* Assets.xcassets */,
 				CD39222C2389FE04007D131E /* LaunchScreen.storyboard */,
+				CD39226A23934BA6007D131E /* Main.storyboard */,
 				CD39222F2389FE04007D131E /* Info.plist */,
 				CD3922292389FE04007D131E /* Preview Content */,
 			);
@@ -154,6 +157,7 @@
 				CD39222E2389FE04007D131E /* LaunchScreen.storyboard in Resources */,
 				CD3922392389FF1A007D131E /* app_icon@2x.png in Resources */,
 				CD39222B2389FE04007D131E /* Preview Assets.xcassets in Resources */,
+				CD39226B23934BA6007D131E /* Main.storyboard in Resources */,
 				CD3922382389FF1A007D131E /* app_icon@3x.png in Resources */,
 				CD3922282389FE04007D131E /* Assets.xcassets in Resources */,
 			);
